@@ -128,7 +128,16 @@ export function Footer() {
                 <div className="bg-muted/80 py-4">
                     <div className="container flex items-center justify-center px-4 md:px-6">
                         <p className="text-base text-muted-foreground text-center">
-                            © 2025 Ing. Hak Cipta Dilindungi.
+                            © 2025{' '}
+                            <a
+                                href="https://github.com/IngsR"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline font-medium"
+                            >
+                                IngsR
+                            </a>
+                            . Hak Cipta Dilindungi.
                         </p>
                     </div>
                 </div>

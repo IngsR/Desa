@@ -28,7 +28,7 @@ export function Header() {
                 <Link href="/" className="flex items-center gap-2 font-bold">
                     <Mountain className="h-6 w-6 text-primary" />
                     <span className="font-headline text-xl">
-                        Bautkan Digital
+                        Lubuk Begalung
                     </span>
                 </Link>
                 <nav className="hidden md:flex items-center gap-8 text-lg font-medium">

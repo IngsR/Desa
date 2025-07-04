@@ -65,7 +65,7 @@ export default function GaleriPage() {
                 <div className="container relative z-10 px-4 md:px-6">
                     <div className="flex flex-col items-center space-y-4 text-center">
                         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-primary font-headline opacity-0 animate-fade-in-up">
-                            Galeri Desa Bautkan
+                            Galeri UMKM Populer
                         </h1>
                         <p className="max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl opacity-0 animate-fade-in-up-staggered">
                             Menyaksikan keindahan alam, budaya, dan momen-momen

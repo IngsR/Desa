@@ -14,7 +14,7 @@ export function IntroSection() {
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl font-headline text-primary">
-                            Jelajahi Pesona Desa Bautkan
+                            Jelajahi Pesona Lubuk Begalung
                         </h2>
                         <div className="relative max-w-[900px] mx-auto">
                             <div

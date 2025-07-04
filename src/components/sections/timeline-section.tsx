@@ -2,34 +2,34 @@ import { Briefcase } from 'lucide-react';
 
 const timelineData = [
     {
-        year: 'Abad ke-14',
-        title: 'Pendirian Awal',
+        year: 'Awal Abad ke-19',
+        title: 'Pembentukan Awal & Jalur Perdagangan',
         description:
-            'Desa Bautkan diperkirakan didirikan oleh para pendatang dari Majapahit, mencari lahan baru untuk pertanian.',
+            'Kawasan ini mulai dikenal sebagai jalur vital yang menghubungkan Padang dengan daerah penghasil lada dan kopi di selatan (Pesisir Selatan). Nama "Lubuk Begalung" diperkirakan berasal dari kondisi geografis Sungai Batang Arau yang memiliki banyak lubuk (bagian sungai yang dalam).',
     },
     {
-        year: '1828',
-        title: 'Masa Kolonial',
+        year: '1906',
+        title: 'Pembangunan Jalur Kereta Api',
         description:
-            'Belanda mulai memasuki wilayah Sumenep, membawa perubahan administrasi dan sistem tanam paksa di desa.',
+            'Pemerintah Hindia Belanda membangun jalur kereta api Pulau Air-Padang Panjang yang melintasi area ini. Kehadiran rel kereta api memperkuat posisi Lubuk Begalung sebagai koridor transportasi penting dan memicu pertumbuhan pemukiman di sekitarnya.',
     },
     {
-        year: '1945',
-        title: 'Kemerdekaan Indonesia',
+        year: 'Era 1980-an',
+        title: 'Transformasi Menjadi Kawasan Industri',
         description:
-            'Semangat kemerdekaan disambut gembira oleh masyarakat. Desa Bautkan resmi menjadi bagian dari Republik Indonesia.',
+            'Pemerintah Kota Padang menetapkan Lubuk Begalung sebagai salah satu kawasan industri. Pabrik-pabrik besar seperti pengolahan karet dan CPO mulai dibangun, mengubah lanskap dari area agraris menjadi pusat industri dan pergudangan utama di Padang.',
     },
     {
-        year: '1980',
-        title: 'Pembangunan Infrastruktur',
+        year: '2009',
+        title: 'Terdampak Gempa Besar Sumatera Barat',
         description:
-            'Pemerintah memulai pembangunan jalan aspal dan sekolah dasar, membuka akses dan meningkatkan pendidikan di desa.',
+            'Seperti wilayah Padang lainnya, Lubuk Begalung turut mengalami dampak signifikan dari gempa bumi berkekuatan 7,6 SR. Peristiwa ini mendorong perbaikan infrastruktur dan peningkatan kesadaran mitigasi bencana di kalangan masyarakat.',
     },
     {
-        year: '2010',
-        title: 'Era Digital',
+        year: '2015 - Sekarang',
+        title: 'Pusat Ekonomi dan Pemukiman Padat',
         description:
-            'Internet dan teknologi mulai masuk ke desa, membuka peluang baru dalam komunikasi dan ekonomi bagi masyarakat Bautkan.',
+            'Lubuk Begalung mengukuhkan posisinya sebagai salah satu kecamatan terpadat dan pusat ekonomi strategis di Kota Padang, dengan perpaduan industri, perdagangan, jasa, kuliner, dan pemukiman yang terus berkembang pesat.',
     },
 ];
 
@@ -46,8 +46,7 @@ export function TimelineSection() {
                             Sejarah Desa
                         </h2>
                         <p className="max-w-[900px] text-muted-foreground md:text-xl lg:text-2xl">
-                            Melacak jejak langkah dan peristiwa penting yang
-                            membentuk Desa Bautkan dari masa ke masa.
+                            Denyut Nadi Ekonomi dan Gerbang Selatan Kota Padang.
                         </p>
                     </div>
                 </div>

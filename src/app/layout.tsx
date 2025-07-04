@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-    title: 'Desa Webiste',
-    description: 'Selamat datang di Website Resmi Desa Bautkan.',
+    title: 'Lubuk Begalung',
+    description: 'Selamat datang di Website Lubuk Begalung',
 };
 
 export default function RootLayout({
