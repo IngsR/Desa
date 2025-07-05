@@ -10,8 +10,8 @@ export function MapSection() {
                             Lokasi
                         </h2>
                         <p className="max-w-[900px] text-muted-foreground md:text-xl lg:text-2xl">
-                            Desa Lubeg, Kecamatan Lubuk Begalung, Kota Padang,
-                            Sumatra Barat, Indonesia.
+                            Kecamatan Lubuk Begalung, Kota Padang, Sumatra
+                            Barat, Indonesia.
                         </p>
                     </div>
                 </div>

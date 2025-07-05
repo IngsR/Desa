@@ -3,17 +3,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
-    Mountain,
     Mail,
     Phone,
     MapPin,
     Facebook,
     Instagram,
-    Twitter,
     ChevronUp,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export function Footer() {
     const [isVisible, setIsVisible] = useState(false);
@@ -51,14 +50,19 @@ export function Footer() {
                                 href="/"
                                 className="flex items-center gap-2 font-bold"
                             >
-                                <Mountain className="h-6 w-6 text-primary" />
+                                <Image
+                                    src="/logo.png"
+                                    alt="Lubuk Begalung Logo"
+                                    width={24}
+                                    height={24}
+                                />
                                 <span className="font-headline text-lg">
-                                    Website Desa
+                                    Lubuk Begalung
                                 </span>
                             </Link>
                             <p className="text-muted-foreground text-base max-w-xs">
                                 Portal digital untuk informasi, pariwisata, dan
-                                layanan masyarakat Desa.
+                                layanan masyarakat Kec. Lubuk begalung.
                             </p>
                             <div className="mt-4">
                                 <h3 className="font-semibold text-base mb-4">
@@ -67,10 +71,16 @@ export function Footer() {
                                 <div className="flex items-center gap-4">
                                     <Link
                                         href="#"
-                                        aria-label="Twitter"
-                                        className="text-muted-foreground hover:text-blue-400 transition-colors"
+                                        aria-label="X"
+                                        className="text-muted-foreground hover:text-foreground transition-colors"
                                     >
-                                        <Twitter className="h-5 w-5" />
+                                        <svg
+                                            viewBox="0 0 1200 1227"
+                                            fill="currentColor"
+                                            className="h-5 w-5"
+                                        >
+                                            <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6902H308.864L607.411 515.117L655.018 583.178L1055.03 1154.51H890.176L569.165 687.854V687.828Z" />
+                                        </svg>
                                     </Link>
                                     <Link
                                         href="#"
@@ -98,8 +108,8 @@ export function Footer() {
                                 <div className="flex items-start gap-3">
                                     <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                                     <span>
-                                        Desa, Kec. Lubuk Begalung, Kota Padang,
-                                        Sumatra Barat
+                                        Kecamatan Lubuk Begalung, Kota Padang,
+                                        Sumatra Barat, Indonesia.
                                     </span>
                                 </div>
                                 <a
@@ -108,7 +118,7 @@ export function Footer() {
                                 >
                                     <Mail className="h-4 w-4 shrink-0" />
                                     <span className="group-hover:text-primary transition-colors">
-                                        desa@bdesa.id
+                                        info@lubeg.ac.id
                                     </span>
                                 </a>
                                 <a

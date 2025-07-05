@@ -20,7 +20,7 @@ const timelineData = [
             'Pemerintah Kota Padang menetapkan Lubuk Begalung sebagai salah satu kawasan industri. Pabrik-pabrik besar seperti pengolahan karet dan CPO mulai dibangun, mengubah lanskap dari area agraris menjadi pusat industri dan pergudangan utama di Padang.',
     },
     {
-        year: '2009',
+        year: '30 September 2009',
         title: 'Terdampak Gempa Besar Sumatera Barat',
         description:
             'Seperti wilayah Padang lainnya, Lubuk Begalung turut mengalami dampak signifikan dari gempa bumi berkekuatan 7,6 SR. Peristiwa ini mendorong perbaikan infrastruktur dan peningkatan kesadaran mitigasi bencana di kalangan masyarakat.',
