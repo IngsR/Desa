@@ -30,12 +30,12 @@ export function Header() {
                 <Link href="/" className="flex items-center gap-2 font-bold">
                     <Image
                         src="/logo.png"
-                        alt="Bautkan Digital Logo"
+                        alt="Lubuk Begalung Logo"
                         width={28}
                         height={28}
                     />
                     <span className="font-headline text-2xl">
-                        Bautkan Digital
+                        Lubuk Begalung
                     </span>
                 </Link>
                 <div className="flex items-center gap-6">

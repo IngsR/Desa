@@ -113,12 +113,12 @@ export function Footer() {
                                     </span>
                                 </div>
                                 <a
-                                    href="mailto:info@bautkan.desa.id"
+                                    href="mailto:info@blubeg.go.id"
                                     className="flex items-center gap-3 group"
                                 >
                                     <Mail className="h-4 w-4 shrink-0" />
                                     <span className="group-hover:text-primary transition-colors">
-                                        info@lubeg.ac.id
+                                        info@lubeg.go.id
                                     </span>
                                 </a>
                                 <a
