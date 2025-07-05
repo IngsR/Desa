@@ -19,6 +19,7 @@ export default {
             fontFamily: {
                 body: ['PT Sans', 'sans-serif'],
                 headline: ['Nunito', 'sans-serif'],
+                nav: ['"Times New Roman"', 'Times', 'serif'],
                 code: ['monospace'],
             },
             colors: {
@@ -89,21 +90,29 @@ export default {
                     '0%': { opacity: '0', transform: 'translateY(1rem)' },
                     '100%': { opacity: '1', transform: 'translateY(0)' },
                 },
-                'move-particles': {
-                    '0%': { backgroundPosition: '0 0, 0 0, 0 0, 0 0, 0 0' },
-                    '100%': {
-                        backgroundPosition:
-                            '-500px 1000px, 400px -600px, -300px -800px, 600px 400px, -200px 700px',
-                    },
+                'animated-gradient': {
+                    '0%': { backgroundPosition: '0% 50%' },
+                    '50%': { backgroundPosition: '100% 50%' },
+                    '100%': { backgroundPosition: '0% 50%' },
+                },
+                'slide-in-left': {
+                    '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                'slide-in-right': {
+                    '0%': { transform: 'translateX(100%)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
                 },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
-                'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+                'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
                 'fade-in-up-staggered':
-                    'fade-in-up 0.5s ease-out 0.2s forwards',
-                'move-particles': 'move-particles 200s linear infinite',
+                    'fade-in-up 0.8s ease-out 0.2s forwards',
+                'animated-gradient': 'animated-gradient 20s ease infinite',
+                'slide-in-left': 'slide-in-left 0.7s ease-out',
+                'slide-in-right': 'slide-in-right 0.7s ease-out',
             },
         },
     },

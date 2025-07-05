@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export function MapSection() {
     return (
-        <section className="w-full py-12 md:py-20 lg:py-24">
+        <section className="relative w-full pt-6 md:pt-10 lg:pt-12 pb-12 md:pb-20 lg:pb-24 bg-background">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-3">

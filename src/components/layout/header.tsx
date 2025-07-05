@@ -25,7 +25,7 @@ export function Header() {
     ];
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-animated-gradient">
             <div className="container flex h-20 items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 font-bold">
                     <Image
@@ -35,17 +35,17 @@ export function Header() {
                         height={28}
                     />
                     <span className="font-headline text-2xl">
-                        Lubuk Begalung
+                        Bautkan Digital
                     </span>
                 </Link>
                 <div className="flex items-center gap-6">
-                    <nav className="hidden md:flex items-center gap-8 text-lg font-medium">
+                    <nav className="hidden md:flex items-center gap-8 text-xl font-medium">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
                                 className={cn(
-                                    'group relative transition-colors hover:text-primary',
+                                    'group relative font-nav font-bold transition-colors hover:text-primary',
                                     pathname === link.href
                                         ? 'text-primary'
                                         : 'text-muted-foreground/80',
@@ -82,7 +82,7 @@ export function Header() {
                                     </SheetTitle>
                                 </SheetHeader>
                                 <div className="flex flex-col h-full">
-                                    <nav className="grid gap-6 text-lg font-medium mt-6">
+                                    <nav className="grid gap-6 text-xl font-medium mt-6">
                                         <Link
                                             href="/"
                                             className="flex items-center gap-2 font-bold text-lg mb-4"
@@ -94,7 +94,7 @@ export function Header() {
                                                 height={28}
                                             />
                                             <span className="font-headline">
-                                                Lubuk Begalung
+                                                Bautkan Digital
                                             </span>
                                         </Link>
                                         {navLinks.map((link) => (
@@ -102,7 +102,7 @@ export function Header() {
                                                 key={link.href}
                                                 href={link.href}
                                                 className={cn(
-                                                    'transition-colors hover:text-primary',
+                                                    'font-nav font-bold transition-colors hover:text-primary',
                                                     pathname === link.href
                                                         ? 'text-foreground'
                                                         : 'text-muted-foreground',

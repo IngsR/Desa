@@ -30,7 +30,7 @@ export function ThemeToggle() {
             <span className="sr-only">Toggle theme</span>
             <span
                 aria-hidden="true"
-                className="pointer-events-none absolute left-0 inline-block h-7 w-7 transform rounded-full bg-background shadow-lg ring-0 transition-transform duration-300 ease-in-out"
+                className="pointer-events-none absolute left-0 inline-block h-7 w-7 transform rounded-full bg-background shadow-lg ring-0 transition-transform duration-1000 ease-in-out"
                 style={{
                     transform:
                         theme === 'dark'
@@ -39,16 +39,16 @@ export function ThemeToggle() {
                 }}
             >
                 <span
-                    className="absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+                    className="absolute inset-0 flex h-full w-full items-center justify-center"
                     aria-hidden="true"
                 >
-                    <Sun className="h-4 w-4 text-foreground opacity-100 dark:opacity-0 transition-opacity duration-300 ease-in-out" />
+                    <Sun className="h-4 w-4 text-foreground rotate-0 scale-100 opacity-100 transition-all duration-1000 ease-in-out dark:-rotate-90 dark:scale-0 dark:opacity-0" />
                 </span>
                 <span
-                    className="absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+                    className="absolute inset-0 flex h-full w-full items-center justify-center"
                     aria-hidden="true"
                 >
-                    <Moon className="h-4 w-4 text-foreground opacity-0 dark:opacity-100 transition-opacity duration-300 ease-in-out" />
+                    <Moon className="h-4 w-4 text-foreground rotate-90 scale-0 opacity-0 transition-all duration-1000 ease-in-out dark:rotate-0 dark:scale-100 dark:opacity-100" />
                 </span>
             </span>
         </button>

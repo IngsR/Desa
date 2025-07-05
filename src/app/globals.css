@@ -5,34 +5,16 @@
 @tailwind utilities;
 
 @layer utilities {
-    .bg-particle-animation::before {
-        @apply content-[''] absolute inset-0 z-0 pointer-events-none animate-move-particles;
-        background-image: radial-gradient(
-                1px circle at 20% 30%,
-                hsl(var(--primary) / 0.5),
-                transparent
-            ),
-            radial-gradient(
-                1px circle at 80% 20%,
-                hsl(var(--primary) / 0.5),
-                transparent
-            ),
-            radial-gradient(
-                1px circle at 50% 70%,
-                hsl(var(--primary) / 0.5),
-                transparent
-            ),
-            radial-gradient(
-                2px circle at 10% 80%,
-                hsl(var(--primary) / 0.3),
-                transparent
-            ),
-            radial-gradient(
-                2px circle at 90% 60%,
-                hsl(var(--primary) / 0.3),
-                transparent
-            );
-        background-repeat: no-repeat;
+    .bg-animated-gradient {
+        background-size: 200% 200%;
+        background-image: linear-gradient(
+            -45deg,
+            hsl(var(--background)),
+            hsl(var(--primary) / 0.5),
+            hsl(var(--background)),
+            hsl(var(--accent) / 0.5)
+        );
+        @apply animate-animated-gradient;
     }
 }
 
