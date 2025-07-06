@@ -2,6 +2,13 @@ import { TimelineSection } from '@/components/sections/timeline-section';
 import { WisataSection } from '@/components/sections/wisata-section';
 import { UmkmSection } from '@/components/sections/umkm-section';
 import { KegiatanSection } from '@/components/sections/kegiatan-section';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Tentang Desa',
+    description:
+        'Mengenal lebih dalam sejarah, potensi, dan kehidupan masyarakat Desa Bautkan.',
+};
 
 export default function TentangDesaPage() {
     return (

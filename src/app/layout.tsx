@@ -2,11 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
+import { siteConfig } from '@/lib/seo';
 
-export const metadata: Metadata = {
-    title: 'Lubuk Begalung',
-    description: 'Selamat datang di Website Lubuk Begalung.',
-};
+export const metadata: Metadata = siteConfig;
 
 export default function RootLayout({
     children,

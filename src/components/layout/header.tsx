@@ -89,12 +89,12 @@ export function Header() {
                                         >
                                             <Image
                                                 src="/logo.png"
-                                                alt="Bautkan Digital Logo"
+                                                alt="Lubuk Begalung Logo"
                                                 width={28}
                                                 height={28}
                                             />
                                             <span className="font-headline">
-                                                Bautkan Digital
+                                                Lubuk Begalung
                                             </span>
                                         </Link>
                                         {navLinks.map((link) => (

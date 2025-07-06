@@ -1,5 +1,12 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Galeri',
+    description:
+        'Menyaksikan keindahan alam, budaya, dan momen-momen berharga di Desa Bautkan melalui lensa kamera.',
+};
 
 const galleryData = [
     {
