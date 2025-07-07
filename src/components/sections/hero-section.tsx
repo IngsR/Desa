@@ -5,7 +5,7 @@ export function HeroSection() {
         <section className="relative w-full h-[calc(100vh-56px)] max-h-[720px] flex items-center justify-center">
             <Image
                 src="/hero-banner.jpg"
-                alt="Pemandangan Desa Bautkan"
+                alt="Pemandangan Lubuk Begalung"
                 data-ai-hint="village panorama"
                 fill
                 className="object-cover"

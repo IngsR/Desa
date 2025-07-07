@@ -26,7 +26,6 @@ export const siteConfig: Metadata = {
         url: 'https://begalung.vercel.app',
         images: [
             {
-                // Point to your dynamic OG image API instead of static og.png
                 url: 'https://begalung.vercel.app/api/og',
                 width: 1200,
                 height: 630,
@@ -41,24 +40,9 @@ export const siteConfig: Metadata = {
         title: 'Lubuk Begalung – Padang, Sumatera Barat',
         description:
             'Website resmi Kecamatan Lubuk Begalung, Kota Padang – budaya Minangkabau, wisata alam, UMKM, dan informasi terkini.',
-        // Use the same dynamic endpoint for Twitter cards
         images: ['https://begalung.vercel.app/api/og'],
     },
-    keywords: [
-        'Lubuk Begalung',
-        'Kecamatan Lubuk Begalung',
-        'Padang',
-        'Sumatera Barat',
-        'Budaya Minangkabau',
-        'Pariwisata Padang',
-        'Wisata Alam Lubuk Begalung',
-        'UMKM Padang',
-        'Pemerintah Kecamatan Lubuk Begalung',
-        'Sejarah Lubuk Begalung',
-        'Kuliner Padang',
-        'Event Lubuk Begalung',
-        'Informasi Wilayah Padang',
-    ],
+    keywords: ['Lubuk Begalung', 'Kecamatan Lubuk Begalung', 'Padang'],
     other: {
         'geo.region': 'ID-SB',
         'geo.placename': 'Lubuk Begalung, Padang',
@@ -67,10 +51,6 @@ export const siteConfig: Metadata = {
         robots: 'index, follow',
         'theme-color': '#005f73',
     },
-    icons: {
-        icon: '/favicon.ico',
-        shortcut: '/favicon-32x32.png',
-        apple: '/apple-touch-icon.png',
-    },
+
     manifest: '/site.webmanifest',
 };

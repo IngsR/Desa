@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Tentang Desa',
     description:
-        'Mengenal lebih dalam sejarah, potensi, dan kehidupan masyarakat Desa Bautkan.',
+        'Mengenal lebih dalam sejarah, potensi, dan kehidupan masyarakat Lubuk Begalung.',
 };
 
 export default function TentangDesaPage() {

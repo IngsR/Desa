@@ -25,7 +25,7 @@ export function MapSection() {
                                 allowFullScreen={true}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Peta Lokasi Desa Bautkan"
+                                title="Peta Lokasi Lubuk Begalung"
                             ></iframe>
                         </CardContent>
                     </Card>

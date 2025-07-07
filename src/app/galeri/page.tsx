@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Galeri',
     description:
-        'Menyaksikan keindahan alam, budaya, dan momen-momen berharga di Desa Bautkan melalui lensa kamera.',
+        'Menyaksikan keindahan alam, budaya, dan momen-momen berharga di Lubuk Begalung melalui lensa kamera.',
 };
 
 const galleryData = [
