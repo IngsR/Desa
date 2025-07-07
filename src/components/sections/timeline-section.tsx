@@ -1,13 +1,22 @@
-import { Briefcase, FileText } from 'lucide-react';
+import {
+    FileText,
+    Users,
+    TowerControl,
+    Landmark,
+    Factory,
+    AlertTriangle,
+    TrendingUp,
+} from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export const timelineData = [
     {
         id: 1,
+        icon: <Users className="w-5 h-5" />,
         year: 'Abad ke-16',
         title: 'Migrasi dari Solok',
         description:
-            'Penduduk dari daerah Solok (X Koto Di Atas/Bawah, Kubung Tiga Belas, Bandar Sepuluh) bermigrasi dan menetap di Lubuk Begalung melalui jalur Gantung Ciri dan Bukit Tunggu.',
+            'Penduduk dari daerah Solok (X Koto Di Atas/Bawah, Kubung Tiga Belas, Bandar Sepuluh) bermigrasi dan menetap di Lubuk Begalung melalui jalur Gantung Ciri dan Bukit Tunggu.',
         reference: {
             label: 'Sejarah Kota Padang (Wikisource)',
             url: 'https://id.wikisource.org/wiki/Halaman%3ASEJARAH_KOTA_PADANG.pdf/16',
@@ -15,6 +24,7 @@ export const timelineData = [
     },
     {
         id: 2,
+        icon: <TowerControl className="w-5 h-5" />,
         year: '1916',
         title: 'Pembangunan Mercusuar Bukit Lampu',
         description:
@@ -26,6 +36,7 @@ export const timelineData = [
     },
     {
         id: 3,
+        icon: <Landmark className="w-5 h-5" />,
         year: '21 Maret 1980',
         title: 'Penggabungan ke Kota Padang',
         description:
@@ -37,10 +48,11 @@ export const timelineData = [
     },
     {
         id: 4,
+        icon: <Factory className="w-5 h-5" />,
         year: '1981',
         title: 'Relokasi PT Teluk Luas',
         description:
-            'PT Teluk Luas memindahkan pabrik karet ke Tanjung Saba Pitameh, Lubuk Begalung, yang mulai beroperasi dan menyerap tenaga kerja lokal.',
+            'PT Teluk Luas memindahkan pabrik karet ke Tanjung Saba Pitameh, Lubuk Begalung, yang mulai beroperasi dan menyerap tenaga kerja lokal.',
         reference: {
             label: 'UPGRISBA Repository',
             url: 'https://repo.upgrisba.ac.id/id/eprint/6709/',
@@ -48,10 +60,11 @@ export const timelineData = [
     },
     {
         id: 5,
+        icon: <AlertTriangle className="w-5 h-5" />,
         year: '30 September 2009',
         title: 'Gempa Besar Sumatera Barat',
         description:
-            'Gempa berkekuatan 7,6 SR mengguncang Sumatera Barat, termasuk Lubuk Begalung—mengakibatkan kerusakan signifikan infrastruktur dan rumah.',
+            'Gempa berkekuatan 7,6 SR mengguncang Sumatera Barat, termasuk Lubuk Begalung—mengakibatkan kerusakan signifikan infrastruktur dan rumah.',
         reference: {
             label: 'Wikipedia: Kota Padang (Geografi)',
             url: 'https://id.wikipedia.org/wiki/Kota_Padang#Geografi',
@@ -59,6 +72,7 @@ export const timelineData = [
     },
     {
         id: 6,
+        icon: <TrendingUp className="w-5 h-5" />,
         year: '2020–2025',
         title: 'Modernisasi Infrastruktur & UMKM',
         description:
@@ -77,7 +91,6 @@ export function TimelineSection() {
             className="relative w-full py-12 md:py-20 lg:py-24 bg-muted/50 overflow-hidden"
         >
             <div className="container mx-auto px-4 md:px-6">
-                {/* Header */}
                 <div className="flex flex-col items-center text-center space-y-4">
                     <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-primary opacity-0 animate-fade-in-up">
                         Sejarah Lubuk Begalung
@@ -88,54 +101,52 @@ export function TimelineSection() {
                     </p>
                 </div>
 
-                {/* Timeline */}
-                <div className="relative mt-12 max-w-5xl mx-auto before:absolute before:left-1/2 before:-translate-x-1/2 before:w-0.5 before:h-full before:bg-border">
-                    {timelineData.map((item, idx) => (
-                        <div
-                            key={item.id}
-                            className={cn(
-                                'relative flex items-center w-full mb-8 last:mb-0 opacity-0 group',
-                                idx % 2 === 0
-                                    ? 'animate-slide-in-left'
-                                    : 'md:animate-slide-in-right',
-                                idx % 2 !== 0 && 'md:flex-row-reverse',
-                            )}
-                            style={{
-                                animationDelay: `${idx * 200 + 300}ms`,
-                                animationFillMode: 'forwards',
-                            }}
-                        >
-                            {/* Spacer */}
-                            <div className="hidden md:block w-5/12" />
+                <div className="relative mt-12 max-w-5xl mx-auto before:absolute before:left-6 md:before:left-1/2 md:before:-translate-x-1/2 before:w-0.5 before:h-full before:bg-border">
+                    {timelineData.map((item, idx) => {
+                        const isRightSide = idx % 2 !== 0;
 
-                            {/* Icon */}
-                            <div className="z-10 flex items-center justify-center w-12 h-12 bg-primary rounded-full text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
-                                <Briefcase className="w-5 h-5" />
-                            </div>
+                        return (
+                            <div
+                                key={item.id}
+                                className={cn(
+                                    'relative flex items-start md:items-center w-full mb-8 last:mb-0 opacity-0 group pl-16 md:pl-0',
+                                    isRightSide && 'md:flex-row-reverse',
+                                    'animate-slide-in-left',
+                                    isRightSide && 'md:animate-slide-in-right',
+                                )}
+                                style={{
+                                    animationDelay: `${idx * 200 + 300}ms`,
+                                    animationFillMode: 'forwards',
+                                }}
+                            >
+                                <div className="hidden md:block w-5/12" />
 
-                            {/* Content Card */}
-                            <div className="w-full md:w-5/12 p-6 bg-card rounded-lg border transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
-                                <h3 className="font-bold text-lg text-primary">
-                                    {item.year}
-                                </h3>
-                                <p className="font-semibold mt-1">
-                                    {item.title}
-                                </p>
-                                <p className="mt-2 text-sm text-muted-foreground">
-                                    {item.description}{' '}
-                                    <sup
-                                        className="text-blue-600 font-bold group-hover:text-blue-800 cursor-pointer"
-                                        title={item.reference.label}
-                                    >
-                                        [{item.id}]
-                                    </sup>
-                                </p>
+                                <div className="absolute left-6 top-0 -translate-x-1/2 md:relative md:left-auto md:top-auto md:translate-x-0 z-10 flex items-center justify-center w-12 h-12 bg-primary rounded-full text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
+                                    {item.icon}
+                                </div>
+
+                                <div className="w-full md:w-5/12 p-6 bg-card rounded-lg border transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                                    <h3 className="font-bold text-lg text-primary">
+                                        {item.year}
+                                    </h3>
+                                    <p className="font-semibold mt-1">
+                                        {item.title}
+                                    </p>
+                                    <p className="mt-2 text-sm text-muted-foreground">
+                                        {item.description}{' '}
+                                        <sup
+                                            className="text-blue-600 font-bold group-hover:text-blue-800 cursor-pointer"
+                                            title={item.reference.label}
+                                        >
+                                            [{item.id}]
+                                        </sup>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
-                {/* Reference Section */}
                 <div className="mt-20 max-w-5xl mx-auto">
                     <h4 className="text-2xl font-semibold text-primary mb-6 flex items-center gap-2">
                         <FileText className="w-5 h-5" />
