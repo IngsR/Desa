@@ -147,7 +147,7 @@ export function Footer() {
                             >
                                 IngsR
                             </a>
-                            . Hak Cipta Dilindungi.
+                            . MIT License.
                         </p>
                     </div>
                 </div>
