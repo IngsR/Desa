@@ -1,4 +1,4 @@
-# 🖼️ Website Statis – Desa Begalung
+# 🖼️ Website Statis – Kecamatan Lubuk Begalung
 
 Situs web statis bertema **Kecamatan Lubuk Begalung, Kota Padang**, dibuat sebagai proyek hobi pribadi tanpa afiliasi resmi.
 
