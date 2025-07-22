@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
+import { JsonLd } from '@/components/json-ld';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -67,6 +68,18 @@ const galleryData = [
 ];
 
 export default function GaleriPage() {
+    const generateImageObjectSchema = (item: (typeof galleryData)[0]) => ({
+        '@context': 'https://schema.org',
+        '@type': 'ImageObject',
+        name: item.alt,
+        contentUrl: `https://begalung.vercel.app${item.image}`, // URL absolut ke gambar
+        description: `Foto ${item.alt} di Kecamatan Lubuk Begalung, kategori ${item.category}.`,
+        author: {
+            '@type': 'Organization',
+            name: 'Pemerintah Kecamatan Lubuk Begalung',
+        },
+    });
+
     return (
         <>
             <section className="relative w-full py-12 md:py-20 lg:py-24 bg-primary/10 overflow-hidden bg-particle-animation">
@@ -105,6 +118,9 @@ export default function GaleriPage() {
                                     animationFillMode: 'forwards',
                                 }}
                             >
+                                <JsonLd
+                                    data={generateImageObjectSchema(item)}
+                                />
                                 <CardContent className="p-0 relative h-full">
                                     <Image
                                         src={item.image}

@@ -5,9 +5,9 @@ import { KegiatanSection } from '@/components/sections/kegiatan-section';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Tentang Desa',
+    title: 'Tentang Lubuk Begalung - Sejarah, Wisata & Potensi',
     description:
-        'Mengenal lebih dalam sejarah, potensi, dan kehidupan masyarakat Lubuk Begalung.',
+        'Mengenal lebih dalam sejarah, potensi wisata (Bukit Nobita, Sungai Batang Arau), UMKM unggulan, dan kehidupan masyarakat di Kecamatan Lubuk Begalung, Kota Padang.',
 };
 
 export default function TentangDesaPage() {

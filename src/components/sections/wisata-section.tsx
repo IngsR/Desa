@@ -2,10 +2,11 @@ import Image from 'next/image';
 import {
     Card,
     CardContent,
+    CardDescription,
     CardHeader,
     CardTitle,
-    CardDescription,
 } from '@/components/ui/card';
+import { JsonLd } from '@/components/json-ld';
 
 const wisataData = [
     {
@@ -15,6 +16,7 @@ const wisataData = [
         image: '/wisata/air-terjun.jpg',
         hint: 'waterfall nature',
         mapUrl: 'https://maps.app.goo.gl/X5hAVsC165Ryq2h1A',
+        geo: { latitude: '-0.9845', longitude: '100.4043' },
     },
     {
         title: 'Bukit Nobita',
@@ -23,6 +25,7 @@ const wisataData = [
         image: '/wisata/bukit-nobita.jpg',
         hint: 'hill sunrise',
         mapUrl: 'https://maps.app.goo.gl/rmxqNKfs6oY3j6BdA',
+        geo: { latitude: '-0.9845', longitude: '100.4043' },
     },
     {
         title: 'Sawah Terasering',
@@ -31,10 +34,26 @@ const wisataData = [
         image: '/wisata/sawah-terasering.jpg',
         hint: 'rice paddies',
         mapUrl: 'https://maps.app.goo.gl/fqo6PR9qn4VFP19m7',
+        geo: { latitude: '-0.9750', longitude: '100.3910' },
     },
 ];
 
 export function WisataSection() {
+    const generateTouristAttractionSchema = (item: (typeof wisataData)[0]) => ({
+        '@context': 'https://schema.org',
+        '@type': 'TouristAttraction',
+        name: item.title,
+        description: item.description,
+        image: `https://begalung.vercel.app${item.image}`,
+        geo: {
+            '@type': 'GeoCoordinates',
+            latitude: item.geo.latitude,
+            longitude: item.geo.longitude,
+        },
+        address: 'Kecamatan Lubuk Begalung, Padang, Sumatera Barat, Indonesia',
+        url: item.mapUrl,
+    });
+
     return (
         <section id="wisata" className="w-full py-12 md:py-20 lg:py-24">
             <div className="container px-4 md:px-6">
@@ -56,10 +75,13 @@ export function WisataSection() {
                             key={index}
                             className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between"
                         >
+                            <JsonLd
+                                data={generateTouristAttractionSchema(item)}
+                            />
                             <CardContent className="p-0">
                                 <Image
                                     src={item.image}
-                                    alt={item.title}
+                                    alt={`Pemandangan indah di ${item.title}, Lubuk Begalung`}
                                     data-ai-hint={item.hint}
                                     width={600}
                                     height={400}
