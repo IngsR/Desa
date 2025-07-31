@@ -67,13 +67,17 @@ export function Header() {
                     <div className="md:hidden">
                         <Sheet>
                             <SheetTrigger asChild>
-                                <Button variant="outline" size="icon">
+                                <Button
+                                    variant="outline"
+                                    size="icon"
+                                    className="hover:bg-primary/10 hover:text-primary"
+                                >
                                     <Menu className="h-5 w-5" />
                                     <span className="sr-only">Buka menu</span>
                                 </Button>
                             </SheetTrigger>
                             <SheetContent
-                                side="left"
+                                side="right"
                                 className="w-full max-w-[320px]"
                             >
                                 <SheetHeader>

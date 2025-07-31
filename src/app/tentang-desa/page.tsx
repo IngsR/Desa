@@ -1,6 +1,7 @@
 import { TimelineSection } from '@/components/sections/timeline-section';
 import { WisataSection } from '@/components/sections/wisata-section';
 import { UmkmSection } from '@/components/sections/umkm-section';
+import { KelurahanSection } from '@/components/sections/kelurahan-section';
 import { KegiatanSection } from '@/components/sections/kegiatan-section';
 import type { Metadata } from 'next';
 
@@ -33,6 +34,7 @@ export default function TentangDesaPage() {
             </section>
 
             <TimelineSection />
+            <KelurahanSection />
             <WisataSection />
             <UmkmSection />
             <KegiatanSection />
